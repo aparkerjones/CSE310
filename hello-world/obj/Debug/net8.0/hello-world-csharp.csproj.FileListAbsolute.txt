@@ -1,0 +1,15 @@
+C:\Users\parko\OneDrive\Documents\CSE310\hello-world\bin\Debug\net8.0\hello-world-csharp.exe
+C:\Users\parko\OneDrive\Documents\CSE310\hello-world\bin\Debug\net8.0\hello-world-csharp.deps.json
+C:\Users\parko\OneDrive\Documents\CSE310\hello-world\bin\Debug\net8.0\hello-world-csharp.runtimeconfig.json
+C:\Users\parko\OneDrive\Documents\CSE310\hello-world\bin\Debug\net8.0\hello-world-csharp.dll
+C:\Users\parko\OneDrive\Documents\CSE310\hello-world\bin\Debug\net8.0\hello-world-csharp.pdb
+C:\Users\parko\OneDrive\Documents\CSE310\hello-world\obj\Debug\net8.0\hello-world-csharp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\parko\OneDrive\Documents\CSE310\hello-world\obj\Debug\net8.0\hello-world-csharp.AssemblyInfoInputs.cache
+C:\Users\parko\OneDrive\Documents\CSE310\hello-world\obj\Debug\net8.0\hello-world-csharp.AssemblyInfo.cs
+C:\Users\parko\OneDrive\Documents\CSE310\hello-world\obj\Debug\net8.0\hello-world-csharp.csproj.CoreCompileInputs.cache
+C:\Users\parko\OneDrive\Documents\CSE310\hello-world\obj\Debug\net8.0\hello-world-csharp.sourcelink.json
+C:\Users\parko\OneDrive\Documents\CSE310\hello-world\obj\Debug\net8.0\hello-world-csharp.dll
+C:\Users\parko\OneDrive\Documents\CSE310\hello-world\obj\Debug\net8.0\refint\hello-world-csharp.dll
+C:\Users\parko\OneDrive\Documents\CSE310\hello-world\obj\Debug\net8.0\hello-world-csharp.pdb
+C:\Users\parko\OneDrive\Documents\CSE310\hello-world\obj\Debug\net8.0\hello-world-csharp.genruntimeconfig.cache
+C:\Users\parko\OneDrive\Documents\CSE310\hello-world\obj\Debug\net8.0\ref\hello-world-csharp.dll
