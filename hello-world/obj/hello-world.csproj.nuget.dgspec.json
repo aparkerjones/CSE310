@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\parko\\OneDrive\\Documents\\CSE310\\hello-world\\hello-world.csproj": {}
+    "C:\\Users\\parko\\OneDrive\\Documents\\cse310\\hello-world\\hello-world.csproj": {}
   },
   "projects": {
-    "C:\\Users\\parko\\OneDrive\\Documents\\CSE310\\hello-world\\hello-world.csproj": {
+    "C:\\Users\\parko\\OneDrive\\Documents\\cse310\\hello-world\\hello-world.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\parko\\OneDrive\\Documents\\CSE310\\hello-world\\hello-world.csproj",
+        "projectUniqueName": "C:\\Users\\parko\\OneDrive\\Documents\\cse310\\hello-world\\hello-world.csproj",
         "projectName": "hello-world",
-        "projectPath": "C:\\Users\\parko\\OneDrive\\Documents\\CSE310\\hello-world\\hello-world.csproj",
+        "projectPath": "C:\\Users\\parko\\OneDrive\\Documents\\cse310\\hello-world\\hello-world.csproj",
         "packagesPath": "C:\\Users\\parko\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\parko\\OneDrive\\Documents\\CSE310\\hello-world\\obj\\",
+        "outputPath": "C:\\Users\\parko\\OneDrive\\Documents\\cse310\\hello-world\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\parko\\AppData\\Roaming\\NuGet\\NuGet.Config"
