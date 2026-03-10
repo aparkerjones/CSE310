@@ -1,0 +1,15 @@
+C:\Users\parko\OneDrive\Documents\cse310\hello-world\bin\Debug\net10.0\hello-world.exe
+C:\Users\parko\OneDrive\Documents\cse310\hello-world\bin\Debug\net10.0\hello-world.deps.json
+C:\Users\parko\OneDrive\Documents\cse310\hello-world\bin\Debug\net10.0\hello-world.runtimeconfig.json
+C:\Users\parko\OneDrive\Documents\cse310\hello-world\bin\Debug\net10.0\hello-world.dll
+C:\Users\parko\OneDrive\Documents\cse310\hello-world\bin\Debug\net10.0\hello-world.pdb
+C:\Users\parko\OneDrive\Documents\cse310\hello-world\obj\Debug\net10.0\hello-world.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\parko\OneDrive\Documents\cse310\hello-world\obj\Debug\net10.0\hello-world.AssemblyInfoInputs.cache
+C:\Users\parko\OneDrive\Documents\cse310\hello-world\obj\Debug\net10.0\hello-world.AssemblyInfo.cs
+C:\Users\parko\OneDrive\Documents\cse310\hello-world\obj\Debug\net10.0\hello-world.csproj.CoreCompileInputs.cache
+C:\Users\parko\OneDrive\Documents\cse310\hello-world\obj\Debug\net10.0\hello-world.sourcelink.json
+C:\Users\parko\OneDrive\Documents\cse310\hello-world\obj\Debug\net10.0\hello-world.dll
+C:\Users\parko\OneDrive\Documents\cse310\hello-world\obj\Debug\net10.0\refint\hello-world.dll
+C:\Users\parko\OneDrive\Documents\cse310\hello-world\obj\Debug\net10.0\hello-world.pdb
+C:\Users\parko\OneDrive\Documents\cse310\hello-world\obj\Debug\net10.0\hello-world.genruntimeconfig.cache
+C:\Users\parko\OneDrive\Documents\cse310\hello-world\obj\Debug\net10.0\ref\hello-world.dll
