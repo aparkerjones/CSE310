@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Alpine starts the app here and loads saved tasks on startup. -->
+    <div class="container" x-data="window.todoApp()" x-init="initApp()" x-cloak>
+        <header class="header">
+            <h1 class="title">My Tasks</h1>
+            <p class="subtitle">A simple place to keep track of tasks</p>
+        </header>
+
+        <div class="input-section">
+            <!-- Input area for adding a task -->
+            <div class="input-wrapper">
+                <input 
+                    type="text" 
+                    x-model="newTask"
+                    @keydown.enter="addTask()"
+                    placeholder="Add a new task..."
+                    class="input-field"
+                >
+                <button @click="addTask()" class="btn btn-primary">Add Task</button>
+            </div>
+        </div>
+
+        <div class="stats" x-cloak>
+            <span class="stat-item">Total: <strong x-text="tasks.length"></strong></span>
+            <span class="stat-item">Completed: <strong x-text="getCompletedCount()"></strong></span>
+            <span class="stat-item">Remaining: <strong x-text="getActiveCount()"></strong></span>
+        </div>
+
+        <!-- Filter buttons for all, to-do, and completed tasks -->
+        <div class="filters">
+            <button 
+                @click="filter = 'active'" 
+                :class="filter === 'active' ? 'btn btn-active' : 'btn btn-secondary'"
+            >
+                To-Do
+            </button>
+            <button 
+                @click="filter = 'all'" 
+                :class="filter === 'all' ? 'btn btn-active' : 'btn btn-secondary'"
+            >
+                All
+            </button>
+            <button 
+                @click="filter = 'completed'" 
+                :class="filter === 'completed' ? 'btn btn-active' : 'btn btn-secondary'"
+            >
+                Completed
+            </button>
+        </div>
+
+        <div class="task-list">
+            <!-- Empty state shown when current filter has no results -->
+            <template x-if="getFilteredTasks().length === 0">
+                <div class="empty-state">
+                    <p x-text="filter === 'all' ? 'No tasks yet. Add one to get started!' : 'No ' + filter + ' tasks.'"></p>
+                </div>
+            </template>
+
+            <!-- Render each task in the current filtered list -->
+            <template x-for="task in getFilteredTasks()" :key="task.id">
+                <div class="task-item" :class="task.completed ? 'completed' : ''">
+                    <!-- Checkbox updates the completed state and saves the change -->
+                    <input 
+                        type="checkbox" 
+                        x-model="task.completed"
+                        @change="saveTasks()"
+                        class="checkbox"
+                    >
+                    <span class="task-text" x-text="task.text"></span>
+                    <div class="task-actions">
+                        <button 
+                            @click="editTask(task.id)" 
+                            class="btn btn-edit"
+                            title="Edit"
+                        >
+                            ✎
+                        </button>
+                        <button 
+                            @click="deleteTask(task.id)" 
+                            class="btn btn-delete"
+                            title="Delete"
+                        >
+                            ✕
+                        </button>
+                    </div>
+                </div>
+            </template>
+        </div>
+
+        <!-- Edit modal. Clicking the background closes it. -->
+        <div class="modal" x-show="showEditModal" @click.self="showEditModal = false">
+            <div class="modal-content">
+                <h2>Edit Task</h2>
+                <input 
+                    type="text" 
+                    x-model="editTaskText" 
+                    @keydown.enter="saveEdit()"
+                    @keydown.escape="showEditModal = false"
+                    class="input-field"
+                    autofocus
+                >
+                <div class="modal-actions">
+                    <button @click="saveEdit()" class="btn btn-primary">Save</button>
+                    <button @click="showEditModal = false" class="btn btn-secondary">Cancel</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Only show this button when there are completed tasks -->
+        <footer class="footer">
+            <button @click="clearCompleted()" class="btn btn-secondary" x-show="getCompletedCount() > 0">
+                Clear Completed Tasks
+            </button>
+        </footer>
+    </div>
+
+    <script defer src="script.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</body>
+</html>
