@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\parko\\OneDrive\\Documents\\CSE310\\hello-world\\hello-world.csproj",
+      "projectUniqueName": "C:\\Users\\parko\\OneDrive\\Documents\\cse310\\hello-world\\hello-world.csproj",
       "projectName": "hello-world",
-      "projectPath": "C:\\Users\\parko\\OneDrive\\Documents\\CSE310\\hello-world\\hello-world.csproj",
+      "projectPath": "C:\\Users\\parko\\OneDrive\\Documents\\cse310\\hello-world\\hello-world.csproj",
       "packagesPath": "C:\\Users\\parko\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\parko\\OneDrive\\Documents\\CSE310\\hello-world\\obj\\",
+      "outputPath": "C:\\Users\\parko\\OneDrive\\Documents\\cse310\\hello-world\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\parko\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -44,7 +44,7 @@
         "auditLevel": "low",
         "auditMode": "all"
       },
-      "SdkAnalysisLevel": "10.0.100"
+      "SdkAnalysisLevel": "10.0.200"
     },
     "frameworks": {
       "net10.0": {
@@ -65,7 +65,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.CSharp": "(,4.7.32767]",
           "Microsoft.VisualBasic": "(,10.4.32767]",
