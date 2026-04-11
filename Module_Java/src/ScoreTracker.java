@@ -130,7 +130,7 @@ public class ScoreTracker {
             return;
         }
 
-        String[] parts = line.split("=");
+        String[] parts = line.split("=", 2);
         if (parts.length != 2) {
             return;
         }

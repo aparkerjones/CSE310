@@ -2,6 +2,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 
 /**
  * Coordinates menu flow, rounds, game logic, and score persistence.
@@ -18,9 +21,32 @@ public class Game {
      */
     public Game() {
         this.scanner = new Scanner(System.in);
-        this.scoreTracker = new ScoreTracker("data/scores.txt");
+        this.scoreTracker = new ScoreTracker(resolveScoreFilePath());
         this.gameHistory = new ArrayList<>();
         this.computerInitials = "CPU";
+    }
+
+    /**
+     * Resolves score file path reliably whether launched from module root
+     * or workspace root.
+     *
+     * @return Absolute path string for the score file
+     */
+    private static String resolveScoreFilePath() {
+        Path cwd = Paths.get("").toAbsolutePath().normalize();
+        Path modulePath = cwd.resolve("Module_Java");
+        Path localDataDir = cwd.resolve("data");
+        Path moduleDataDir = modulePath.resolve("data");
+
+        if (Files.exists(localDataDir)) {
+            return localDataDir.resolve("scores.txt").toString();
+        }
+
+        if (Files.exists(moduleDataDir)) {
+            return moduleDataDir.resolve("scores.txt").toString();
+        }
+
+        return localDataDir.resolve("scores.txt").toString();
     }
 
     /**
